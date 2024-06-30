@@ -180,3 +180,10 @@ nav ul li a {
     color: #1f1f1f;
     text-decoration: none; /* Remove o sublinhado dos links */
 }
+
+@media screen .and. (max-width: 768px){} {
+    produto-container{
+        width:100%;
+        flex-direction: column;
+    }
+}
