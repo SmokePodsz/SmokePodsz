@@ -171,3 +171,10 @@ footer {
     border-radius: 5px;
     color: #000;
 }
+
+@media screen .and. (max-width: 768px){} {
+    produto-container{
+        width:100%;
+        flex-direction: column;
+    }
+}
