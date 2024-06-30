@@ -7,9 +7,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
+    height: 900px;
     color: #ffffff;
-    margin: 0;
-    padding: 0;
 }
 
 header {
@@ -18,14 +17,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 header .logo {
     font-size: 24px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    border-radius: 10px; /* Arredonda levemente os cantos */
 }
 
 header nav ul {
@@ -50,41 +46,51 @@ header nav ul li a {
 }
 
 .products {
+    position: relative;
     padding: 80px;
-    text-align: center;
 }
 
 .products h2 {
-    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 0px;
 }
 
-.product-list, .product-listtres {
+.product-list {
+    position: relative;
     display: flex;
     gap: 40px;
-    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-listtres {
+    position: relative;
+    display: flex;
+    gap: 40px;
     justify-content: center;
 }
 
 .product {
+    position: relative;
     background-color: #1f1f1f;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
-    flex: 1 1 calc(33.333% - 40px);
-    box-sizing: border-box;
-    max-width: 300px;
 }
 
 .product img {
+    position: relative;
     max-width: 100%;
     border-radius: 8px;
 }
 
 .product h3 {
+    position: relative;
     margin: 10px 0;
 }
 
 .product p {
+    position: relative;
     margin: 10px 0;
     font-size: 18px;
 }
@@ -112,15 +118,16 @@ footer {
 }
 
 .rounded-image {
-    border-radius: 10px;
+    border-radius: 10px; /* Arredonda levemente os cantos */
 }
 
 .container {
     width: 100%;
     height: 100vh;
+    border: 1px solid black;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
 }
 
 .terms-container {
@@ -131,6 +138,26 @@ footer {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaço entre a imagem e o texto */
+    border-radius: 10px; /* Arredonda levemente os cantos */
+}
+
+.logo img {
+    height: 75px;
+    width: 75px;
+    border-radius: 10px; /* Arredonda levemente os cantos */
+}
+
+.logo strong {
+    font-size: 24px;
+    color: #ffffff;
+    border-radius: 10px; /* Arredonda levemente os cantos */
 }
 
 .important {
@@ -145,36 +172,9 @@ footer {
     color: #000;
 }
 
-@media (max-width: 768px) {
-    header nav ul {
+@media screen .and. (max-width: 768px){} {
+    produto-container{
+        width:100%;
         flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-
-    .product-list, .product-listtres {
-        flex-direction: column;
-    }
-
-    .product {
-        flex: 1 1 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        padding: 10px;
-    }
-
-    .hero {
-        padding: 20px;
-    }
-
-    .products {
-        padding: 40px 20px;
-    }
-
-    .terms-container {
-        padding: 10px;
     }
 }
