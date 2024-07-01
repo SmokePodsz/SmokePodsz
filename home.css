@@ -48,20 +48,55 @@ header nav ul li a {
     text-decoration: none;
 }
 
+/* Estilos do botão de menu mobile */
+.mobile-menu-button {
+    display: none;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Menu mobile escondido */
+.hidden {
+    display: none;
+}
+
+/* Estilos para mobile */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
+    .mobile-menu-button {
+        display: block;
     }
 
-    header .logo {
-        margin-bottom: 10px;
+    #desktop-menu {
+        display: none;
     }
 
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
+    #mobile-menu {
+        display: block;
+        background-color: #333;
+        color: white;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        z-index: 1;
+    }
+
+    #mobile-menu ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #mobile-menu ul li {
+        padding: 10px;
+    }
+
+    #mobile-menu ul li a {
+        color: white;
+        text-decoration: none;
     }
 }
 
@@ -147,56 +182,3 @@ footer {
         padding: 40px 20px;
     }
 }
-
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* Estilos do menu mobile */
-.mobile-menu-button {
-    display: none;
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-/* Menu mobile escondido */
-.hidden {
-    display: none;
-}
-
-/* Estilos para mobile */
-@media (max-width: 768px) {
-    .mobile-menu-button {
-        display: block;
-    }
-
-    #mobile-menu {
-        display: block;
-        background-color: #333;
-        color: white;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        width: 200px;
-    }
-
-    #mobile-menu ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    #mobile-menu ul li {
-        padding: 10px;
-    }
-
-    #mobile-menu ul li a {
-        color: white;
-        text-decoration: none;
-    }
-}
-
