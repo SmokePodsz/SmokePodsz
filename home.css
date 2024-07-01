@@ -147,3 +147,32 @@ footer {
         padding: 40px 20px;
     }
 }
+
+/* Adicione isto ao seu arquivo CSS */
+
+.menu-toggle {
+    display: none;
+    background-color: #ff2222;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}
