@@ -67,7 +67,7 @@ header nav ul li a {
 /* Estilos para mobile */
 @media (max-width: 768px) {
     .mobile-menu-button {
-        display: block;
+        display: none;
     }
 
     #desktop-menu {
@@ -75,7 +75,7 @@ header nav ul li a {
     }
 
     #mobile-menu {
-        display: block;
+        display: none;
         background-color: #333;
         color: white;
         position: absolute;
