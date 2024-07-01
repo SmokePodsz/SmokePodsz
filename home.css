@@ -16,15 +16,9 @@ header {
     background-color: #1f1f1f;
     padding: 10px 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header-container {
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    flex-wrap: wrap;
 }
 
 header .logo {
@@ -35,20 +29,6 @@ header .logo {
 
 header .logo img {
     height: 60px; /* Ajuste a altura conforme necessário */
-}
-
-.menu-button {
-    display: none;
-    background-color: #ff2222;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.menu-button:hover {
-    background-color: #e00000;
 }
 
 header nav ul {
@@ -69,19 +49,19 @@ header nav ul li a {
 }
 
 @media (max-width: 768px) {
-    .menu-button {
-        display: block;
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
     }
 
     header nav ul {
         flex-direction: column;
         gap: 10px;
         align-items: center;
-        display: none;
-    }
-
-    header nav ul.active {
-        display: flex;
     }
 }
 
