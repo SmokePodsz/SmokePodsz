@@ -11,9 +11,17 @@
         <div class="logo">
             <img src="https://fv5-4.failiem.lv/thumb_show.php?i=29z9ejzdmw&view&v=1&PHPSESSID=d31b75ede5147916e60592b01537de73bef7a5a9" alt="Logo da Loja" style="height: 90px; width: 90px;">
             <strong><h1>Smoke Pod'sz</h1></strong>
+            <button class="mobile-menu-button" onclick="toggleMenu()">☰ Menu</button>
         </div>
-        <button class="menu-toggle" aria-label="Toggle Menu">MENU</button>
-        <nav>
+        <nav id="desktop-menu">
+            <ul>
+                <li><a href="home.html"><strong>Inicio</strong></a></li>
+                <li><a href="produtos.html"><strong>Produtos</strong></a></li>
+                <li><a href="termos.html"><strong>Termos & Condições</strong></a></li>
+                <li><a href="quem_somos.html"><strong>Quem Somos</strong></a></li>
+            </ul>
+        </nav>
+        <nav id="mobile-menu" class="hidden">
             <ul>
                 <li><a href="home.html"><strong>Inicio</strong></a></li>
                 <li><a href="produtos.html"><strong>Produtos</strong></a></li>
@@ -62,6 +70,6 @@
             </a>
         </p>
     </footer>
-    <script src="home.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
