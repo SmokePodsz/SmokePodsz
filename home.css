@@ -1,173 +1,166 @@
-* {
+/* home.css */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    height: 900px;
-    color: #ffffff;
-}
-
 header {
-    background-color: #1f1f1f;
-    padding: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 header .logo {
-    font-size: 24px;
-    border-radius: 10px; /* Arredonda levemente os cantos */
-}
-
-header nav ul {
-    list-style: none;
     display: flex;
-    gap: 20px;
+    align-items: center;
 }
 
-header nav ul li a {
-    color: #ffffff;
+header .logo img {
+    margin-right: 10px;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header .nav-list li {
+    margin-left: 20px;
+}
+
+header .nav-list a {
+    color: white;
     text-decoration: none;
+    font-size: 16px;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.mobile-menu .line1,
+.mobile-menu .line2,
+.mobile-menu .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
 }
 
 .hero {
+    background: #f2f2f2;
+    padding: 50px 20px;
     text-align: center;
-    padding: 50px;
-    background-color: #2c2c2c;
 }
 
 .hero h1 {
-    margin-bottom: 20px;
+    margin: 0;
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
 }
 
 .products {
-    position: relative;
-    padding: 80px;
+    padding: 20px;
+    text-align: center;
 }
 
 .products h2 {
-    position: relative;
-    text-align: center;
-    margin-bottom: 0px;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .product-list {
-    position: relative;
     display: flex;
-    gap: 40px;
     justify-content: center;
-}
-
-.product-listtres {
-    position: relative;
-    display: flex;
-    gap: 40px;
-    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .product {
-    position: relative;
-    background-color: #1f1f1f;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .product img {
-    position: relative;
-    max-width: 100%;
-    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 .product h3 {
-    position: relative;
+    font-size: 18px;
     margin: 10px 0;
 }
 
 .product p {
-    position: relative;
-    margin: 10px 0;
-    font-size: 18px;
+    font-size: 16px;
+    color: #333;
 }
 
-button {
-    background-color: #ff2222;
-    color: #ffffff;
+.button-default {
+    background-color: #333;
+    color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
-button:hover {
-    background-color: #e00000;
+.button-default:hover {
+    background-color: #555;
 }
 
 footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 5px;
-    background-color: #1f1f1f;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 20px 0;
 }
 
-.rounded-image {
-    border-radius: 10px; /* Arredonda levemente os cantos */
+footer p {
+    margin: 5px 0;
 }
 
-.container {
-    width: 100%;
-    height: 100vh;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+footer a img {
+    margin: 0 10px;
+    vertical-align: middle;
 }
 
-.terms-container {
-    max-width: 800px;
-    margin: auto;
-    background-color: #1f1f1f;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px; /* Espaço entre a imagem e o texto */
-    border-radius: 10px; /* Arredonda levemente os cantos */
-}
-
-.logo img {
-    height: 75px;
-    width: 75px;
-    border-radius: 10px; /* Arredonda levemente os cantos */
-}
-
-.logo strong {
-    font-size: 24px;
-    color: #ffffff;
-    border-radius: 10px; /* Arredonda levemente os cantos */
-}
-
-.important {
-    font-weight: bold;
-    color: #ff6f61;
-}
-
-.highlight {
-    background-color: #ffefc5;
-    padding: 5px;
-    border-radius: 5px;
-    color: #000;
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+    }
+    .nav-list.active {
+        display: flex;
+    }
+    .mobile-menu {
+        display: flex;
+    }
 }
