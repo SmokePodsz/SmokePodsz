@@ -4,11 +4,13 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -45,7 +47,7 @@ header .nav-list li {
 }
 
 header .nav-list a {
-    color: white;
+    color: #e0e0e0;
     text-decoration: none;
     font-size: 16px;
 }
@@ -61,12 +63,12 @@ header .nav-list a {
 .mobile-menu .line3 {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: #e0e0e0;
     margin: 4px;
 }
 
 .hero {
-    background: #f2f2f2;
+    background: #1c1c1c;
     padding: 50px 20px;
     text-align: center;
 }
@@ -74,20 +76,24 @@ header .nav-list a {
 .hero h1 {
     margin: 0;
     font-size: 36px;
+    color: #e0e0e0;
 }
 
 .hero p {
     font-size: 18px;
+    color: #b3b3b3;
 }
 
 .products {
     padding: 20px;
     text-align: center;
+    background-color: #1a1a1a;
 }
 
 .products h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #e0e0e0;
 }
 
 .product-list {
@@ -98,12 +104,12 @@ header .nav-list a {
 }
 
 .product {
-    background: #fff;
+    background: #2a2a2a;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #333;
     border-radius: 5px;
     width: 250px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .product img {
@@ -115,16 +121,17 @@ header .nav-list a {
 .product h3 {
     font-size: 18px;
     margin: 10px 0;
+    color: #e0e0e0;
 }
 
 .product p {
     font-size: 16px;
-    color: #333;
+    color: #b3b3b3;
 }
 
 .button-default {
     background-color: #333;
-    color: white;
+    color: #e0e0e0;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -137,8 +144,8 @@ header .nav-list a {
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
     text-align: center;
     padding: 20px 0;
 }
