@@ -7,97 +7,32 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
+    height: 900px;
     color: #ffffff;
-    margin: 0;
-    padding: 0;
 }
 
 header {
     background-color: #1f1f1f;
-    padding: 10px 20px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 header .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-header .logo img {
-    height: 60px; /* Ajuste a altura conforme necessário */
+    font-size: 24px;
+    border-radius: 10px; /* Arredonda levemente os cantos */
 }
 
 header nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    margin: 0;
 }
 
 header nav ul li a {
     color: #ffffff;
     text-decoration: none;
-}
-
-/* Estilos do botão de menu mobile */
-.mobile-menu-button {
-    display: none;
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-/* Menu mobile escondido */
-.hidden {
-    display: none;
-}
-
-/* Estilos para mobile */
-@media (max-width: 768px) {
-    .mobile-menu-button {
-        display: none;
-    }
-
-    #desktop-menu {
-        display: none;
-    }
-
-    #mobile-menu {
-        display: none;
-        background-color: #333;
-        color: white;
-        position: absolute;
-        top: 80px;
-        right: 0;
-        width: 200px;
-        z-index: 1;
-    }
-
-    #mobile-menu ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    #mobile-menu ul li {
-        padding: 10px;
-    }
-
-    #mobile-menu ul li a {
-        color: white;
-        text-decoration: none;
-    }
 }
 
 .hero {
@@ -111,41 +46,51 @@ header nav ul li a {
 }
 
 .products {
+    position: relative;
     padding: 80px;
-    text-align: center;
 }
 
 .products h2 {
-    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 0px;
 }
 
 .product-list {
+    position: relative;
     display: flex;
     gap: 40px;
-    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-listtres {
+    position: relative;
+    display: flex;
+    gap: 40px;
     justify-content: center;
 }
 
 .product {
+    position: relative;
     background-color: #1f1f1f;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
-    flex: 1 1 calc(33.333% - 40px);
-    box-sizing: border-box;
-    max-width: 300px;
 }
 
 .product img {
+    position: relative;
     max-width: 100%;
     border-radius: 8px;
 }
 
 .product h3 {
+    position: relative;
     margin: 10px 0;
 }
 
 .product p {
+    position: relative;
     margin: 10px 0;
     font-size: 18px;
 }
@@ -165,132 +110,64 @@ button:hover {
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     background-color: #1f1f1f;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
-@media (max-width: 480px) {
-    header {
-        padding: 10px;
-    }
-
-    .hero {
-        padding: 20px;
-    }
-
-    .products {
-        padding: 40px 20px;
-    }
+.rounded-image {
+    border-radius: 10px; /* Arredonda levemente os cantos */
 }
 
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
-  a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  a:hover {
-    opacity: 0.7;
-  }
-  
-  .logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-  }
-  
-  nav {
+.container {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.terms-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.logo {
+    display: flex;
     align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #23232e;
-    height: 8vh;
-  }
-  
-  main {
-    background: url("bg.jpg") no-repeat center center;
-    background-size: cover;
-    height: 92vh;
-  }
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
-  }
-  
-  .mobile-menu {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-  }
-  
-  @media (max-width: 999px) {
-    body {
-      overflow-x: hidden;
-    }
-    .nav-list {
-      position: absolute;
-      top: 8vh;
-      right: 0;
-      width: 50vw;
-      height: 92vh;
-      background: #23232e;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
-    }
-    .nav-list li {
-      margin-left: 0;
-      opacity: 0;
-    }
-    .mobile-menu {
-      display: block;
-    }
-  }
-  
-  .nav-list.active {
-    transform: translateX(0);
-  }
-  
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  
-  .mobile-menu.active .line2 {
-    opacity: 0;
-  }
-  
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
+    justify-content: center;
+    gap: 10px; /* Espaço entre a imagem e o texto */
+    border-radius: 10px; /* Arredonda levemente os cantos */
+}
+
+.logo img {
+    height: 75px;
+    width: 75px;
+    border-radius: 10px; /* Arredonda levemente os cantos */
+}
+
+.logo strong {
+    font-size: 24px;
+    color: #ffffff;
+    border-radius: 10px; /* Arredonda levemente os cantos */
+}
+
+.important {
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+.highlight {
+    background-color: #ffefc5;
+    padding: 5px;
+    border-radius: 5px;
+    color: #000;
+}
