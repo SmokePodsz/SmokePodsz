@@ -1,15 +1,11 @@
-/* Reset básico para remover margens e paddings padrão */
-* {
+/* termos.css */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
     background-color: #121212;
     color: #e0e0e0;
-    line-height: 1.6;
 }
 
 header {
@@ -28,8 +24,6 @@ header .logo {
 
 header .logo img {
     margin-right: 10px;
-    height: 90px;
-    width: 90px;
 }
 
 header .logo h1 {
@@ -41,25 +35,21 @@ header nav {
     align-items: center;
 }
 
-header .nav-list {
+header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-header .nav-list li {
+header nav ul li {
     margin-left: 20px;
 }
 
-header .nav-list a {
+header nav ul li a {
     color: #e0e0e0;
     text-decoration: none;
     font-size: 16px;
-}
-
-header .nav-list a:hover {
-    color: #1e90ff;
 }
 
 main {
