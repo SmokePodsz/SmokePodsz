@@ -112,16 +112,3 @@ footer a img {
 footer a img:hover {
     opacity: 0.8;
 }
-
-@media (max-width: 768px) {
-    .nav-list {
-        display: none;
-        flex-direction: column;
-    }
-    .nav-list.active {
-        display: flex;
-    }
-    .mobile-menu {
-        display: flex;
-    }
-}
