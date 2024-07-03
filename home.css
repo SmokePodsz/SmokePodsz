@@ -24,8 +24,6 @@ header .logo {
 
 header .logo img {
     margin-right: 10px;
-    height: 90px;
-    width: 90px;
 }
 
 header .logo h1 {
@@ -37,18 +35,18 @@ header nav {
     align-items: center;
 }
 
-header .nav-list {
+header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-header .nav-list li {
+header nav ul li {
     margin-left: 20px;
 }
 
-header .nav-list a {
+header nav ul li a {
     color: #e0e0e0;
     text-decoration: none;
     font-size: 16px;
