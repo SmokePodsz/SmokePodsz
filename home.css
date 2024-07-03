@@ -52,21 +52,6 @@ header nav ul li a {
     font-size: 16px;
 }
 
-.mobile-menu {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.mobile-menu .line1,
-.mobile-menu .line2,
-.mobile-menu .line3 {
-    width: 25px;
-    height: 3px;
-    background-color: #e0e0e0;
-    margin: 4px;
-}
-
 .hero {
     background: #1c1c1c;
     padding: 50px 20px;
@@ -157,17 +142,4 @@ footer p {
 footer a img {
     margin: 0 10px;
     vertical-align: middle;
-}
-
-@media (max-width: 768px) {
-    .nav-list {
-        display: none;
-        flex-direction: column;
-    }
-    .nav-list.active {
-        display: flex;
-    }
-    .mobile-menu {
-        display: flex;
-    }
 }
