@@ -24,6 +24,8 @@ header .logo {
 
 header .logo img {
     margin-right: 10px;
+    height: 90px;
+    width: 90px;
 }
 
 header .logo h1 {
