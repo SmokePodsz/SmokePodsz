@@ -130,7 +130,7 @@ header .nav-list a {
 }
 
 .button-default {
-    background-color: #333;
+    background-color: #f10a0a;
     color: #e0e0e0;
     border: none;
     padding: 10px 20px;
@@ -140,7 +140,7 @@ header .nav-list a {
 }
 
 .button-default:hover {
-    background-color: #555;
+    background-color: #ff0000;
 }
 
 footer {
