@@ -126,13 +126,3 @@ footer a img {
     margin: 0 10px;
     vertical-align: middle;
 }
-
-@media (max-width: 768px) {
-    header nav ul {
-        display: none;
-        flex-direction: column;
-    }
-    header nav ul.active {
-        display: flex;
-    }
-}
